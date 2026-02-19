@@ -1,148 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Layout</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Landing</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="header">
-  <div class="container nav">
     <div class="logo">BRAND</div>
-    <nav>
-      <ul>
-        <li>Popular</li>
-        <li>Product</li>
-        <li>Service</li>
-        <li>Contact</li>
-      </ul>
+    <nav class="nav">
+        <a href="#">Popular</a>
+        <a href="#">Product</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
     </nav>
-  </div>
 </header>
 
-<!-- HERO / VIDEO -->
+<!-- HERO -->
 <section class="hero">
-  <div class="container hero-content">
-
-    <div class="video-box">
-      <img src="img/video-thumb.jpg" alt="video">
-      <div class="play">▶</div>
+    <div class="hero-video">
+        <img src="https://picsum.photos/800/400" alt="Vídeo">
+        <button class="play-btn">▶</button>
     </div>
-
-    <h2>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit sed do.</h2>
-
-  </div>
+    <h1>Lorem ipsum dolor sit amet,<br>consect adipiscing elit sed do.</h1>
 </section>
 
-<!-- BLOCO IMAGEM + TEXTO -->
-<section class="about container">
-
-  <div class="about-text">
-    <h3>Lorem ipsum dolor sit amet</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Sed do eiusmod tempor incididunt ut labore.
-    </p>
-  </div>
-
-  <div class="about-images">
-    <img src="img/pessoa1.jpg">
-    <img src="img/pessoa2.jpg">
-  </div>
-
+<!-- ABOUT -->
+<section class="about">
+    <div class="about-text">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button>Saiba Mais</button>
+    </div>
+    <div class="about-img">
+        <img src="https://picsum.photos/400/300" alt="Imagem">
+    </div>
 </section>
 
-<!-- CARD INFO -->
-<section class="info">
-  <div class="container info-card">
-
-    <img src="img/pessoa3.jpg">
-
-    <div>
-      <h3>Lorem ipsum dolor sit amet</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Sed do eiusmod tempor incididunt ut labore.
-      </p>
-      <button>Assine Agora</button>
+<!-- CARD SECTION -->
+<section class="highlight">
+    <div class="highlight-img">
+        <img src="https://picsum.photos/400/300" alt="Imagem">
     </div>
-
-  </div>
+    <div class="highlight-text">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button>Assine Agora</button>
+    </div>
 </section>
 
 <!-- FAQ -->
-<section class="faq container">
+<section class="faq">
+    <h2>Dúvidas frequentes</h2>
 
-  <div class="faq-text">
-    <h2>Dolore eu fugiat nulla pariatur?</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt.
-    </p>
-
-    <div class="accordion">
-
-      <div class="item active">
-        <div class="title">🍎 Qui officia deserunt mollit</div>
-        <div class="content">
-          <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Sed do eiusmod tempor</li>
-            <li>Ut enim ad minim veniam</li>
-          </ul>
+    <div class="faq-item">
+        <button class="faq-question">O que é este projeto?</button>
+        <div class="faq-answer">
+            <p>É uma landing page responsiva criada com HTML, CSS e JS.</p>
         </div>
-      </div>
-
-      <div class="item">
-        <div class="title">🌎 Anim id est laborum</div>
-        <div class="content">
-          Conteúdo do accordion…
-        </div>
-      </div>
-
     </div>
-  </div>
 
-  <img class="faq-img" src="img/familia.jpg">
-
+    <div class="faq-item">
+        <button class="faq-question">Funciona no celular?</button>
+        <div class="faq-answer">
+            <p>Sim, totalmente responsivo.</p>
+        </div>
+    </div>
 </section>
 
-<!-- CARDS -->
-<section class="cards container">
-
-  <h2>Lorem ipsum dolor sit amet consectetur</h2>
-
-  <div class="card-grid">
-
-    <div class="card">
-      <img src="img/pessoa1.jpg">
-      <h4>Lorem ipsum dolor</h4>
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
+<!-- GALERIA -->
+<section class="gallery">
+    <div class="gallery-item">
+        <img src="https://picsum.photos/300/200?1">
+        <p>Lorem ipsum dolor sit amet.</p>
     </div>
-
-    <div class="card">
-      <img src="img/pessoa2.jpg">
-      <h4>Lorem ipsum dolor</h4>
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <div class="gallery-item">
+        <img src="https://picsum.photos/300/200?2">
+        <p>Lorem ipsum dolor sit amet.</p>
     </div>
-
-    <div class="card">
-      <img src="img/pessoa3.jpg">
-      <h4>Lorem ipsum dolor</h4>
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <div class="gallery-item">
+        <img src="https://picsum.photos/300/200?3">
+        <p>Lorem ipsum dolor sit amet.</p>
     </div>
-
-  </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
-  <p>Copyright© 2025 - Todos os direitos reservados</p>
+    <p>Copyright 2026 - Todos os direitos reservados</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
+
+<!-- ========================= -->
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Família">
+    </div>
+  </section>
+
+
+  <!-- CARDS -->
+  <section class="cards">
+    <h2>Lorem ipsum dolor sit amet consectetur</h2>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+        <h4>Lorem ipsum dolor</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330">
+        <h4>Excepteur sint occaecat</h4>
+        <p>
+          Cupidatat non proident, sunt in culpa qui officia.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2">
+        <h4>Ut enim ad minim</h4>
+        <p>
+          Quis nostrud exercitation ullamco laboris.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      Copyright 2025 Lorem ipsum dolor sit amet.
+      Todos os direitos reservados.
+    </p>
+    <div class="footer-links">
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos de Uso</a>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+

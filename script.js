@@ -1,15 +1,26 @@
-// ACCORDION
+const questions = document.querySelectorAll(".faq-question");
 
-const items = document.querySelectorAll(".accordion .item");
+questions.forEach(question => {
+    question.addEventListener("click", () => {
+        const answer = question.nextElementSibling;
 
-items.forEach(item => {
-  item.querySelector(".title").addEventListener("click", () => {
+        answer.style.display =
+            answer.style.display === "block" ? "none" : "block";
+    });
+});
 
-    // fecha outros
-    items.forEach(i => i.classList.remove("active"));
+// =========================
+// script.js
+// =========================
 
-    // abre atual
-    item.classList.toggle("active");
+const headers = document.querySelectorAll('.accordion-header');
+
+headers.forEach(header => {
+  header.addEventListener('click', () => {
+
+    const item = header.parentElement;
+
+    item.classList.toggle('active');
 
   });
 });
