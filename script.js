@@ -1,10 +1,15 @@
-const questions = document.querySelectorAll(".faq-question");
+// ACCORDION
 
-questions.forEach(question => {
-    question.addEventListener("click", () => {
-        const answer = question.nextElementSibling;
+const items = document.querySelectorAll(".accordion .item");
 
-        answer.style.display =
-            answer.style.display === "block" ? "none" : "block";
-    });
+items.forEach(item => {
+  item.querySelector(".title").addEventListener("click", () => {
+
+    // fecha outros
+    items.forEach(i => i.classList.remove("active"));
+
+    // abre atual
+    item.classList.toggle("active");
+
+  });
 });
