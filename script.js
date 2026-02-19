@@ -9,10 +9,6 @@ questions.forEach(question => {
     });
 });
 
-// =========================
-// script.js
-// =========================
-
 const headers = document.querySelectorAll('.accordion-header');
 
 headers.forEach(header => {
